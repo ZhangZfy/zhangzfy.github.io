@@ -3,6 +3,7 @@ _site
 .DS_Store
 .DS_store
 .claude/
+CLAUDE.md
 .idea
 .jekyll-cache
 .jekyll-metadata
