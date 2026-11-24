@@ -218,3 +218,30 @@ ul.timeline li::before {
      color: var(--global-text-color);
 }
 */
+
+// Background page entries: date and location on the left, logo on the right
+
+.cv-date-column {
+  text-align: left;
+
+  p.location {
+    margin-bottom: 0;
+  }
+}
+
+.cv-logo-column {
+  text-align: right;
+
+  img {
+    max-width: 100%;
+    max-height: 60px;
+    object-fit: contain;
+  }
+}
+
+// Logos are drawn for light backgrounds; give them a white plate in dark mode
+html[data-theme="dark"] .cv-logo-column img {
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 4px;
+}

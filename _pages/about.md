@@ -1,16 +1,15 @@
 ---
 layout: about
-title: about
+title: Home
 permalink: /
-subtitle: ""
 
 profile:
   align: right
-  image: me_picture.jpeg
-  image_circular: false # crops the image to make it circular
+  image: me_avatar.jpeg
+  image_circular: true # crops the image to make it circular
   more_info: ""
 
-selected_papers: false # includes a list of papers marked as "selected={true}"
+selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
 announcements:
@@ -19,13 +18,14 @@ announcements:
   limit: 5
 
 latest_posts:
-  enabled: true
+  enabled: false
   scrollable: true
   limit: 3
 ---
 
-Hi, thanks for stopping by — you can call me **Finn**. I'm currently pursuing my Master's degree in the [Miyao Group](https://mynlp.is.s.u-tokyo.ac.jp/en/) at the University of Tokyo.
+I am a Master's student in the Graduate School of Information Science and Technology at the University of Tokyo, advised by [Prof. Yusuke Miyao](https://mynlp.is.s.u-tokyo.ac.jp/en/). Before that, I received my B.Eng. in Computer Science from the University of Science and Technology of China.
 
-My research interest, broadly speaking, is in how AI can make a meaningful impact on the world. This includes — but is not limited to — exploring unified representations across different modalities to design and train more capable, more general-purpose models, as well as adapting existing powerful models to downstream tasks so that their full potential can be realized in real-world applications.
+My research mainly focuses on **post-training of diffusion models**. More recently, I have started working on **robot learning**, exploring the training and fine-tuning of vision-language-action (VLA) models, as well as LLM-based agents for robot control.
 
-I'm still at the early stage of my research journey. At the moment, I'm working toward publishing my first academic paper and starting my first research internship. I'm open to exploring different directions, and I look forward to eventually diving deep into a specific area. If any of this resonates with you, or if you're curious about my work, I'd love to hear from you!
+**I am applying for Ph.D. programs starting in Fall 2027 or 2028, and I am actively looking for research internships.** If you think I might be a good fit, please feel free to reach out by email.
+{: .about-callout}

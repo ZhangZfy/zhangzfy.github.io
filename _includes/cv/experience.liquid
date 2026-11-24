@@ -9,7 +9,7 @@
   {% for entry in entries %}
     <li class="list-group-item">
       <div class="row">
-        <div class="col-xs-2 col-sm-2 col-md-2 text-center date-column">
+        <div class="col-12 col-md-3 cv-date-column">
           {% capture start_date %}
             {% if entry.start_date %}{{ entry.start_date }}{% elsif entry.startDate %}{{ entry.startDate }}{% endif %}
           {% endcapture %}
@@ -21,7 +21,11 @@
             {% comment %} Extract year only from dates like "1933-01-01" or just use "1933" as is {% endcomment %}
             {% assign startDate = start_date | split: '-' | first %}
             {% assign endDate = end_date | split: '-' | first | default: 'Present' %}
-            {% assign date = startDate | append: ' - ' | append: endDate %}
+            {% if startDate == endDate %}
+              {% assign date = startDate %}
+            {% else %}
+              {% assign date = startDate | append: ' - ' | append: endDate %}
+            {% endif %}
           {% else %}
             {% assign date = '' %}
           {% endif %}
@@ -49,7 +53,7 @@
             </tbody>
           </table>
         </div>
-        <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0">
+        <div class="{% if entry.logo %}col-9 col-md-7{% else %}col-12 col-md-9{% endif %} mt-2 mt-md-0">
           {% capture position_title %}
             {% if entry.position %}{{ entry.position }}{% endif %}
           {% endcapture %}
@@ -85,6 +89,11 @@
             </ul>
           {% endif %}
         </div>
+        {% if entry.logo %}
+          <div class="col-3 col-md-2 cv-logo-column">
+            <img src="{{ entry.logo | prepend: '/assets/img/logos/' | relative_url }}" alt="{{ entry.logo_alt | default: 'logo' }}">
+          </div>
+        {% endif %}
       </div>
     </li>
   {% endfor %}

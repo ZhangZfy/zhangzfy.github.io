@@ -1,63 +1,55 @@
 cv:
-  name: Zhengfeiyang Zhang
-  # label: ""
-  email: zfyfinnzhang common_sign gmail.com
-  location: Tokyo, Japan
-  # image: ""
-  # summary: ""
-
-  # social_networks:
-  #   - network: GitHub
-  #     username: zhangzfy
-  #   - network: LinkedIn
-  #     username: zhangzfy
-
-  # address:
-  #   street: ""
-  #   city: ""
-  #   region: ""
-  #   postalCode: ""
-  #   countryCode: ""
-
   sections:
     Education:
       - institution: "University of Tokyo"
+        logo: utokyo.svg
+        logo_alt: "University of Tokyo"
         location: "Tokyo, Japan"
-        area: "Creative Informatics"
-        studyType: "Master's Degree"
-        startDate: "2025-10"
-        endDate: "2027-09 (expected)"
+        area: "Department of Creative Informatics, Graduate School of Information Science and Technology"
+        studyType: "Master of Information Science and Technology"
+        startDate: "Oct 2025"
+        endDate: "Present"
+        highlights:
+          - "Supervisor: [Prof. Yusuke Miyao](https://mynlp.is.s.u-tokyo.ac.jp/en/)"
 
       - institution: "Temple University"
-        location: "Philadelphia, USA"
-        area: "Computer Science"
+        logo: temple.svg
+        logo_alt: "Temple University"
+        location: "Philadelphia, U.S."
         studyType: "Exchange Student"
-        startDate: "2024-01"
-        endDate: "2024-05"
+        startDate: "Jan 2024"
+        endDate: "May 2024"
+        highlights:
+          - "Exchange program funded by USTC Fellowship"
 
       - institution: "University of Science and Technology of China"
+        logo: ustc.svg
+        logo_alt: "University of Science and Technology of China"
         location: "Hefei, China"
-        area: "Computer Science"
-        studyType: "Bachelor's Degree"
-        startDate: "2021-09"
-        endDate: "2025-07"
+        area: "School of Computer Science and Technology"
+        studyType: "Bachelor of Engineering"
+        startDate: "Sep 2021"
+        endDate: "Jun 2025"
+        highlights:
+          - "Supervisor: [Prof. Tong Xu](http://staff.ustc.edu.cn/~tongxu)"
 
-    # Experience: []
+    Experience:
+      - company: "HPC-AI Lab, National University of Singapore"
+        logo: nus.svg
+        logo_alt: "National University of Singapore"
+        position: "Research Assistant"
+        location: "Singapore"
+        startDate: "Jun 2026"
+        endDate: "Nov 2026"
+        highlights:
+          - "Research topics: diffusion reinforcement learning, diffusion inference acceleration"
 
-    # Skills: []
-
-    Languages:
-      - name: Chinese
-        summary: "Native speaker"
-      - name: English
-        summary: "Fluent"
-      - name: Japanese
-        summary: "Intermediate (JLPT N2)"
-
-    # Interests: []
-
-    # Certificates: []
-
-    # Projects: []
-
-    # References: []
+      - company: "Cardinal AI Lab, InfRec"
+        logo: infrec.png
+        logo_alt: "Cardinal AI Lab"
+        position: "Research Intern"
+        location: "Shenzhen, China"
+        startDate: "Aug 2026"
+        endDate: "Nov 2026"
+        highlights:
+          - "Research topics: robot learning, vision-language-action (VLA) models"

@@ -169,29 +169,77 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
+// About page header (name, bio and links beside the photo)
+
+.about-header {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+
+  .about-name {
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 1.25rem;
+  }
+
+  .about-subtitle {
+    text-align: center;
+    margin-top: -1rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .about-callout {
+    border-left: 3px solid var(--global-theme-color);
+    padding: 0.5rem 0.9rem;
+    background-color: var(--global-code-bg-color);
+    border-radius: 0 4px 4px 0;
+  }
+
+  .about-photo {
+    text-align: right;
+
+    img {
+      max-width: 150px;
+      width: 100%;
+    }
+  }
+
+  .contact-icons a {
+    margin: 0 0.4rem;
+  }
+
+  @media (max-width: 767.98px) {
+    .about-photo {
+      order: -1;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+  }
+}
+
 // Social (bottom)
 
 .social {
   text-align: center;
 
   .contact-icons {
-    font-size: 4rem;
+    font-size: 1.5rem;
 
     a {
       img {
-        width: 3.2rem;
-        height: 3.2rem;
-        margin-bottom: 1rem;
+        width: 1.2rem;
+        height: 1.2rem;
+        margin-bottom: 0;
       }
 
       svg {
-        width: 3.5rem;
-        height: 4rem;
-        margin-bottom: 0.5rem;
+        width: 1.3rem;
+        height: 1.5rem;
+        margin-bottom: 0;
 
         image {
-          width: 3.5rem;
-          height: 3.5rem;
+          width: 1.3rem;
+          height: 1.3rem;
         }
       }
 

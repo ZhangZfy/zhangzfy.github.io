@@ -9,7 +9,7 @@
   {% for entry in entries %}
     <li class="list-group-item">
       <div class="row">
-        <div class="col-xs-2 col-sm-2 col-md-2 text-center date-column">
+        <div class="col-12 col-md-3 cv-date-column">
           {% capture start_date %}
             {% if entry.start_date %}{{ entry.start_date }}{% elsif entry.startDate %}{{ entry.startDate }}{% endif %}
           {% endcapture %}
@@ -55,7 +55,7 @@
             </tbody>
           </table>
         </div>
-        <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0">
+        <div class="{% if entry.logo %}col-9 col-md-7{% else %}col-12 col-md-9{% endif %} mt-2 mt-md-0">
           {% capture study_type %}
             {% if entry.studyType %}{{ entry.studyType }}{% elsif entry.degree %}{{ entry.degree }}{% endif %}
           {% endcapture %}
@@ -91,6 +91,11 @@
             </ul>
           {% endif %}
         </div>
+        {% if entry.logo %}
+          <div class="col-3 col-md-2 cv-logo-column">
+            <img src="{{ entry.logo | prepend: '/assets/img/logos/' | relative_url }}" alt="{{ entry.logo_alt | default: 'logo' }}">
+          </div>
+        {% endif %}
       </div>
     </li>
   {% endfor %}
